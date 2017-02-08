@@ -1,0 +1,90 @@
+/* CSS declarations go here */
+body {
+	font-family: sans-serif;
+	background-color: #fff;
+	font-size: 14px;
+	color: #9fa0a2;
+}
+
+.container {
+	max-width: 70%;
+	margin: 0 auto;
+	min-height: 100%;
+	background: white;
+}
+
+header {
+	padding: 20px 15px 15px 15px;
+	position: relative;
+}
+
+h1 {
+	color: #4ba9df;
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: 10px;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+form {
+	margin-top: 10px;
+	margin-bottom: -10px;
+	position: relative;
+}
+
+.new-task input {
+	box-sizing: border-box;
+	padding: 10px 0;
+	background: transparent;
+	border: none;
+	width: 10%;
+	margin-right: 30px;
+	font-size: 1em;
+	float: left;
+}
+
+.new-task input:focus{
+	outline: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #c8c8c8;
+	border-radius: 8px; 
+}
+
+li {
+	position: relative;
+	list-style: none;
+	padding: 15px;
+	transition: all .05s;
+}
+
+li .text {
+	margin-left: 10px;
+}
+
+li.checked {
+	background-color: #4ba9df;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+	li {
+		padding: 12px 15px;
+	}
+
+	.new-task input {
+		padding-bottom: 5px;
+	}
+}
